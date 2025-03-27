@@ -25,14 +25,7 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
 
 
 # 定义所需安装的包列表 下列插件你都可以自行删减
-PACKAGES=""
-PACKAGES="$PACKAGES curl"
-PACKAGES="$PACKAGES yq"
-PACKAGES="$PACKAGES ip-full"
-PACKAGES="$PACKAGES kmod-inet-diag"
-PACKAGES="$PACKAGES  kmod-nft-tproxy"
-PACKAGES="$PACKAGES kmod-tun"
-PACKAGES="$PACKAGES luci-app-wol"
+PACKAGES="$PACKAGES base-files block-mount ca-bundle dnsmasq-full dropbear fdisk firewall4 fstools kmod-gpio-button-hotplug kmod-nf-nathelper kmod-nf-nathelper-extra kmod-nft-offload libc libgcc libustream-openssl logd luci-app-package-manager luci-compat luci-lib-base luci-lib-ipkg luci-light mkf2fs mtd netifd nftables odhcp6c odhcpd-ipv6only opkg partx-utils ppp ppp-mod-pppoe procd-ujail uboot-envtools uci uclient-fetch urandom-seed urngd kmod-r8125 kmod-rtw88-8822ce rtl8822ce-firmware wpad-openssl iwinfo curl yq ip-full kmod-inet-diag kmod-nft-tproxy kmod-tun luci-app-diskman"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
@@ -40,7 +33,6 @@ PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 # 增加几个必备组件 方便用户安装iStore
